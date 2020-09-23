@@ -54,13 +54,13 @@ a {
     animation-delay: 1s;
 }
 #hero h1:nth-child(1){
+    animation: text_reveal_name .5s ease forwards;
     animation-delay: 1s;
 }
 #hero h1:nth-child(2){
     animation-delay: 2s;
 }
 #hero h1:nth-child(3){
-    animation: text_reveal_name .5s ease forwards;
     animation-delay: 3s;
 }
 #hero h1 span{
@@ -102,17 +102,35 @@ a {
 /* End of Hero Section */
 
 /* Projects Section */
+#projects{
+    background-image: url(/img/thepog.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#projects:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .5;
+    z-index: -1;
+}
 #projects .section-title {
     font-size: 4rem;
     font-weight: 300;
-    color: black;
+    color: white;
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 1rem;
     text-align: center;
 }
 #projects .section-title span {
-    color: blueviolet;
+    color: #add8e6;
 }
 #projects .projects{
     flex-direction: column;
@@ -134,20 +152,38 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     margin: 20px auto;
     overflow: hidden;
     border-radius: 10px;
 }
 #projects .project-info{
-    padding: 30px;
+    padding: 24px;
     flex-basis: 50%;
     height: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    color: white;
+    background-image: url(img/Capture.JPG);
+}
+#projects .oldproj{
+    display: inline-block;
+    padding: 10px 30px;
+    color: #add8e6;
     background-color: transparent;
+    border: 2px solid #add8e6;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+#projects .oldproj:hover{
+    color: white;
+    background-color: #add8e6;
 }
 
 /* End of Projects Section */
