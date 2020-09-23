@@ -103,7 +103,7 @@ a {
 
 /* Projects Section */
 #projects{
-    background-image: url(/img/thepog.jpg);
+    background-image: url(/img/thepog4.jpg);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -187,6 +187,64 @@ a {
 }
 
 /* End of Projects Section */
+
+/* Start of About Me Section */
+#about{
+    background-image: url(/img/wp3837738.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#about .about{
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0% auto;
+    padding: 100px 20px;
+    color: white
+}
+#about .col-left{
+    width: 250px;
+    height: 360px;
+}
+#about .col-right{
+    width: 100%;
+    font-size: 20px;
+}
+#about .col-right h1{
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    margin-bottom: 10px;
+}
+#about .col-right h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    margin-bottom: 10px;
+}
+#about .col-right p {
+    margin-bottom: 20px;
+}
+#about .col-right .contact {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+#about .col-right .contact:hover {
+    color: black;
+    background-color: white;
+}
+/* End of About Me Section */
 
 /* Keyframes */
 @keyframes text_reveal_box{
