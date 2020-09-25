@@ -21,7 +21,7 @@ a {
 
 /* Hero Section */
 #hero {
-    background-image: url(/img/Capture.JPG);
+    background-image: url(/img/Homepage.JPG);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -135,7 +135,7 @@ a {
 
 /* Projects Section */
 #projects{
-    background-image: url(/img/thepog4.jpg);
+    background-image: url(/img/Projects.jpg);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -198,7 +198,7 @@ a {
     justify-content: center;
     flex-direction: column;
     color: white;
-    background-image: url(img/Capture.JPG);
+    background-image: url(img/Homepage.JPG);
 }
 #projects .oldproj{
     display: inline-block;
@@ -222,7 +222,7 @@ a {
 
 /* Start of About Me Section */
 #about{
-    background-image: url(/img/wp3837738.jpg);
+    background-image: url(/img/AboutMe.jpg);
     background-size: cover;
     background-position: top center;
     position: relative;
