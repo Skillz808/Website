@@ -247,6 +247,9 @@ a {
     padding: 100px 20px;
     color: white
 }
+#about .about span{
+    color: cyan;
+}
 #about .col-left{
     width: 250px;
     height: 360px;
@@ -288,6 +291,123 @@ a {
     background-color: white;
 }
 /* End of About Me Section */
+/* Accounts Section */
+#accounts{
+    background-image: url(/img/Accounts.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#accounts::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+#accounts .section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    text-align: center;
+}
+#accounts .section-title span{
+    color: cornflowerblue;
+}
+#accounts .TW{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #00acee;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+#accounts .TW:hover {
+    color: black;
+    background-color: #00acee;
+}
+#accounts .GH{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid black;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+#accounts .GH:hover {
+    color: black;
+    background-color: white;
+}
+#accounts .ST{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #0b5a8f;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+#accounts .ST:hover {
+    color: black;
+    background-color: #0b5a8f;
+}
+#accounts .TH{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid blueviolet;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+#accounts .TH:hover {
+    color: black;
+    background-color: blueviolet;
+}
+#accounts .YT{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid red;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+#accounts .YT:hover {
+    color: black;
+    background-color: red;
+}
+/* End of Accounts Section */
 
 /* Keyframes */
 @keyframes text_reveal_box{
