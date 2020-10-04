@@ -1,6 +1,6 @@
 # SkillzDev-Site
 Files for https://SkillzDevelopment.xyz
 
-Sources:
-smoothScroll, by alicelieutier
+Sources: <br>
+smoothScroll, by alicelieutier <br>
 https://github.com/alicelieutier/smoothScroll
