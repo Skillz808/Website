@@ -407,16 +407,6 @@ a {
     color: black;
     background-color: red;
 }
-#accounts .Email {
-    margin: 3%;
-    margin-top: 20%;
-    margin-bottom: 20px;
-    clear: both;
-    text-align: center;
-    color: #29aae2;
-    font-size: 3.2em;
-    display: inline-block;
-}
 /* End of Accounts Section */
 
 /* Keyframes */
