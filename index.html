@@ -10,6 +10,12 @@
 </head>
 
 <body>
+    <script type="text/javascript" src="./smoothscroll.min.js"></script>
+    <script language={javascript}>
+        if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+            location.replace("https://SkillzDevelopment.xyz/mobile.html")
+        };
+    </script>
     <!-- Hero Section -->
     <section id="hero">
         <div class="hero container">
@@ -73,11 +79,12 @@
         <div class="account container">
             <div>
                 <h1 class="section-title">My <span>Accounts</span></h1>
-                <a href="https://twitter.com/Skillz808" type="button" class="TW">Twitter</a>
-                <a href="https://github.com/Skillz808" type="button" class="GH">Github</a>
-                <a href="https://steamcommunity.com/id/Skillz808/" type="button" class="ST">Steam</a>
-                <a href="https://www.twitch.tv/skillz808" type="button" class="TH">Twitch</a>
-                <a href="https://www.youtube.com/channel/UCMsXDtKDmZoGqvFRIL2hvYQ" type="button" class="YT">Youtube</a>
+                <a href="https://twitter.com/Skillz808" target="_blank" type="button" class="TW">Twitter</a>
+                <a href="https://github.com/Skillz808" target="_blank" type="button" class="GH">Github</a>
+                <a href="https://steamcommunity.com/id/Skillz808/" target="_blank" type="button" class="ST">Steam</a>
+                <a href="https://www.twitch.tv/skillz808" target="_blank" type="button" class="TH">Twitch</a>
+                <a href="https://www.youtube.com/channel/UCMsXDtKDmZoGqvFRIL2hvYQ" target="_blank" type="button"
+                    class="YT">Youtube</a>
             </div>
         </div>
     </section>
