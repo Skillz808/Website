@@ -11,7 +11,6 @@
 
 <body>
     <script type="text/javascript" src="./smoothscroll.min.js"></script>
-    <script type="text/javascript" src="./mobile.js"></script>
     <!-- Hero Section -->
     <section id="hero">
         <div class="hero container">
@@ -48,7 +47,12 @@
                         </p>
                     </div>
                     <div class="project-image">
-                        <img src="img/SkillzBot.JPG" alt="SkillzBot !help"> </div>
+                        <picture>
+                            <source media="(max-width: 599px)" srcset="./img/SkillzBot.jpg">
+                            <source media="(min-width: 600px)" srcset="./img/SkillzBotDesktop.jpg">
+                            <img src="./img/SkillzBot.JPG">
+                        </picture>
+                    </div>
                 </div>
             </div>
             <div><a href="#" type="button" class="oldproj">Previous Projects</a></div>
