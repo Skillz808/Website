@@ -1,4 +1,4 @@
-# SkillzDev-Site
+# SkillzDev Site
 Files for https://SkillzDevelopment.xyz
 
 Sources: <br>
