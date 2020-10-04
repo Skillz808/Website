@@ -450,3 +450,16 @@ a {
     
 }
 /* End of Keyframes*/
+/* Media Query For Mobile */
+@media only screen and (max-width: 679px) {
+    #projects .project-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 75%;
+        margin: 20px auto;
+        overflow: hidden;
+        border-radius: 10px;
+}
+}
