@@ -192,14 +192,17 @@ a {
 #hero .scrolldown span:nth-child(1){
     transform: translate(-15px,-15px);
     animation-delay: -0.4s;
+    animation-timing-function: steps(20);
 }
 #hero .scrolldown span:nth-child(2){
     transform: translate(0,0);
     animation-delay: -0.2s;
+    animation-timing-function: steps(20);
 }
 #hero .scrolldown span:nth-child(3){
     transform: translate(15px,15px);
     animation-delay: -0s;
+    animation-timing-function: steps(20);
 }
 #hero .hero{
     max-width: 1200px;
@@ -219,12 +222,15 @@ a {
 #hero h1:nth-child(1){
     animation: text_reveal_name .5s ease forwards;
     animation-delay: 1s;
+    animation-timing-function: steps(20);
 }
 #hero h1:nth-child(2){
     animation-delay: 2s;
+    animation-timing-function: steps(20);
 }
 #hero h1:nth-child(3){
     animation-delay: 3s;
+    animation-timing-function: steps(20);
 }
 #hero h1 span{
     position: absolute;
