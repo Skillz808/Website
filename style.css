@@ -315,10 +315,9 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     margin: 20px auto;
     overflow: hidden;
-    border-radius: 10px;
 }
 #projects .project-info{
     padding: 24px;
@@ -330,6 +329,7 @@ a {
     flex-direction: column;
     color: white;
     background-image: url(img/Homepage.JPG);
+    margin-top: 20px;
 }
 #projects .oldproj{
     display: inline-block;
