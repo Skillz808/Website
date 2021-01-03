@@ -152,7 +152,6 @@ a {
 /* End of Header Section */
 /* Hero Section */
 #hero {
-    background-image: url(/img/Homepage.JPG);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -267,6 +266,15 @@ a {
 #hero .cta:hover{
     color: white;
     background-color: blueviolet;
+}
+#hero .backgroundvideo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -10;
 }
 /* End of Hero Section */
 
