@@ -84,7 +84,7 @@ a {
     transform: translate(-50%, -50%) scale(0);
     color: rgb(240, 248, 255, 0.021);
     font-size: 13rem;
-    letter-spacing: 50px;
+    letter-spacing: 20px;
     z-index: -1;
     transition: .3s ease letter-spacing;
 }
@@ -337,6 +337,7 @@ a {
     color: white;
     background-image: url(img/Homepage.JPG);
     margin-top: 20px;
+    border-radius: 15px;
 }
 #projects .oldproj{
     display: inline-block;
