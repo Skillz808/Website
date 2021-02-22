@@ -1,0 +1,5 @@
+SkillzDevelopment.xyz Privacy Policy
+
+This website does not collect any data from users, however the website is hosted on netlify. 
+This means that you are subject to Netlify's Privacy Policy.
+You can find Netlify's Privacy Policy at: https://www.netlify.com/privacy/

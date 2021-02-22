@@ -26,6 +26,20 @@ a {
 .brand h1 span {
     color: blueviolet;
 }
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    text-align: left;
+    z-index: 100000;
+    font-size: 15px;
+ }
+ .footer a{
+     color: white;
+ }
 /* Header Section */
 #header {
     position: fixed;
@@ -150,7 +164,7 @@ a {
     top: 0;
 }
 /* End of Header Section */
-/* Hero Section */
+/* Hero (main) Section */
 #hero {
     background-size: cover;
     background-position: top center;
@@ -269,7 +283,7 @@ a {
     background-color: blueviolet;
 }
 
-/* End of Hero Section */
+/* End of Hero (main) Section */
 
 /* Projects Section */
 #projects{
