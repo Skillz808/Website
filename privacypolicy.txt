@@ -1,6 +1,9 @@
 SkillzDevelopment.xyz Privacy Policy
 
-This website does not collect any data from users, however the website is hosted on netlify. 
+This website does not by itself gather personally identifiable information, however this site is hosted on Netlify.
 This means that you are subject to Netlify's Privacy Policy.
 You can find Netlify's Privacy Policy at: https://www.netlify.com/privacy/
 More specific information about Netlify's Compliance with GDPR and CCPA can be found here: https://www.netlify.com/gdpr-ccpa
+
+If you have any enquiries about this you can contact me at: Contact@SkillzDevelopment.xyz
+Please keep in mind though, that I have no control over Netlify's Privacy Policy.
