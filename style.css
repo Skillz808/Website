@@ -30,15 +30,23 @@ a {
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
     background-color: transparent;
     color: white;
-    text-align: left;
     z-index: 100000;
-    font-size: 15px;
+    padding-bottom: 10px;
  }
- .footer a{
+ .footer .PrivacyPolicy{
      color: white;
+     padding-left: 10px;
+     font-size: 15px;
+ }
+ .footer .Copyright{
+     position: fixed;
+     left: 96.6%;
+     bottom: 0;
+     color: white;
+     font-size: 15px;
+     padding-bottom: 10px;
  }
 /* Header Section */
 #header {

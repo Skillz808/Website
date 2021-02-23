@@ -30,6 +30,28 @@ html:after{
     opacity: .5;
     z-index: -1;
 }
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+    color: white;
+    z-index: 100000;
+    padding-bottom: 10px;
+ }
+ .footer .PrivacyPolicy{
+     color: white;
+     padding-left: 10px;
+     font-size: 15px;
+ }
+ .footer .Copyright{
+     position: fixed;
+     left: 96.6%;
+     bottom: 0;
+     color: white;
+     font-size: 15px;
+     padding-bottom: 10px;
+ }
 #OldProjects h1 {
     display: block;
     width: fit-content;
