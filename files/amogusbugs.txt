@@ -1,4 +1,13 @@
-Urgent: Currently no game and is just menus.
-        The game does not scale well and only works properly at very specific resolutions, this means that fullscreen is very hit or miss.
+Urgent: 
+There is currently no game and it is just menus.
+The game does not scale well and only displays properly at very specific resolutions. This means that fullscreen will not always work.
+Mobile does not work at all, however there is no plan for mobile version (WebGL issue) 
 
-Issues: PlayerPrefs(Audio) Starts at 0, so game is always muted on first start. Fix: Turn up audio in options.
+Issues: 
+The player preference for the games volume starts at 0 meaning the audio is muted upon first start. Workaround: Turn up the volume in options.
+Quite long loading times for WebGL and sometimes it appears as though it is not loading at all. (WebGL issue)
+
+Must be implemented: 
+Buttons that open webpages should open them in a new tab so that the game does not need to be reloaded each time. (WebGL issue)
+The quit button should have a script that checks if the game is WebGL or not as currently there is two versions of the script.
+New HTML/CSS as the current design is very bland and has no way to return to main webpage (Quit button does this). (WebGL issue) 
