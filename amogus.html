@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=1100 height=600></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -22,16 +22,16 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Fullscreen is very broken on most monitors that arent 1920x1080</div>
+        <div id="unity-build-title">Still in development.</div>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/AmongUsWebGlBuild.loader.js";
+      var loaderUrl = buildUrl + "/WebBuild.loader.js";
       var config = {
-        dataUrl: buildUrl + "/AmongUsWebGlBuild.data",
-        frameworkUrl: buildUrl + "/AmongUsWebGlBuild.framework.js",
-        codeUrl: buildUrl + "/AmongUsWebGlBuild.wasm",
+        dataUrl: buildUrl + "/WebBuild.data",
+        frameworkUrl: buildUrl + "/WebBuild.framework.js",
+        codeUrl: buildUrl + "/WebBuild.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "SkillzGaming (Very legitimate company)",
         productName: "Among Us: The probably illegal version",

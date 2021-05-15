@@ -1,0 +1,4 @@
+Urgent: Currently no game and is just menus.
+        The game does not scale well and only works properly at very specific resolutions, this means that fullscreen is very hit or miss.
+
+Issues: PlayerPrefs(Audio) Starts at 0, so game is always muted on first start. Fix: Turn up audio in options.
