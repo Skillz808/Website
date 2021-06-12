@@ -1,6 +1,5 @@
 Urgent: 
-There is currently no game and it is just menus.
-The game does not scale well and only displays properly at very specific resolutions. This means that fullscreen will not always work.
+The game does not scale well and only displays properly at very specific resolutions. This means that fullscreen will not always work. (Workaround: Dont use fullscreen) (May still break on very small monitors and phones)
 
 Issues: 
 The player preference for the games volume starts at 0 meaning the audio is muted upon first start. (Workaround: Turn up the volume in options.)
@@ -14,3 +13,4 @@ The quit button should have a script that checks if the game is WebGL or not as 
 New HTML/CSS as the current design is very bland and has no way to return to main webpage (Though quit button does this). (WebGL issue) 
 Redo buttons as they overall look ugly as they all have different spacing and size of button overlay. (Easy fix)
 Try externally storing the game instead of storing it with the website files. (May result in faster load times) (Should reduce bandwidth used on host) (WebGL issue)
+Add more minigames.
