@@ -1,0 +1,57 @@
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+    }
+    
+    .container {
+        margin: 0 auto;
+        max-width: 940px;
+        padding: 0 10px;
+    }
+    
+    .header {
+        background-image: url(/pussy.png);
+        background-size: contain;
+        height: 930px;
+        text-align: center;
+    }
+    
+    .header .container {
+        position: relative;
+        top: 200px;
+    }
+    
+    .header h1 {
+        color: #fff;
+        line-height: 100px;
+        font-size: 80px;
+        margin-top: 0;
+        margin-bottom: 80px;
+        text-transform: uppercase;
+    }
+
+    .header img {
+        margin-left: 1240px;
+        margin-top: 250px;
+        width: 200px;
+    }
+    
+span {
+    animation: blink 0.15s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
