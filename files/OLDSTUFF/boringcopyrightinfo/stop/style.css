@@ -16,7 +16,7 @@
     }
     
     .header {
-        background-image: url(/pussy.png);
+        background-image: url(./pussy.png);
         background-size: contain;
         height: 930px;
         text-align: center;
