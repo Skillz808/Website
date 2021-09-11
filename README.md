@@ -1,5 +1,7 @@
 # SkillzDev Site
-Files for https://skillzdevelopment.xyz
+My website, made to learn HTML, CSS and JavaScript.
+
+https://skillzdev.xyz
 
 Sources: <br>
 smoothScroll, by alicelieutier <br>
