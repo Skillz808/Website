@@ -18,6 +18,11 @@ function time_since_update() {
     document.write(days) 
 }   
 
+function play_custom_file(){
+    var link = document.getElementById('text21').value
+    document.getElementById('audioplayer').src = link
+}
+
 
 dragElement(document.getElementById("loading"));
 dragElement(document.getElementById("musicplayer"));
