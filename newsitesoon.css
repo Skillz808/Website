@@ -1,6 +1,4 @@
 html{
-    font-size: 10px;
-    font-family: 'Montserrat', sans-serif;
     background-image: url(./img/bliss.jpg);
 }
 
@@ -9,8 +7,9 @@ html{
     display: inline-block;
     width: 485px;
     height: 235px;
-    z-index: 15;
-    top: 50%;
-    left: 50%;
-    margin: -100px 0 0 -300px;
+
+}
+
+#musicplayer{
+    position: absolute;
 }

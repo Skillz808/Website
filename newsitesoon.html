@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="newsitesoon.js" > </script>
     <link rel="stylesheet" href="https://unpkg.com/xp.css">
     <link rel="shortcut icon" href="./img/xpicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./newsitesoon.css">
     <title>1% █▒▒▒▒▒▒▒▒▒</title>
 </head>
 <body>
-    <div class="window" style="width: 315px" id="musicplayer">
-        <div class="title-bar">
-          <div class="title-bar-text">Wacky MIDI Player</div>
+    <div class="window" style="width: 315px; top: 20px; left: 20px;" id="musicplayer">
+        <div class="title-bar" id="musicplayerheader">
+          <div class="title-bar-text">Wacky MIDI Player <span style="opacity: 0;">It is a mystery</span></div>
           <div class="title-bar-controls">
             <button aria-label="Close" onclick="removeMusicPlayer(); "></button>
           </div>
@@ -22,8 +21,8 @@
             <audio controls="controls" src="./img/itisamystery.mp3" autoplay loop></audio>
         </div>
       </div>
-      <div class="window" id="loading">
-        <div class="title-bar">
+      <div class="window" style="top: 400px; left: 700px;" id="loading">
+        <div class="title-bar" id="loadingheader">
           <div class="title-bar-text">1% of newsite.html Completed</div>
           <div class="title-bar-controls">
             <a href="./index.html"><button aria-label="Close" onclick="removeLoading(); " ></button></a>
@@ -40,4 +39,5 @@
         </div>
       </div>
 </body>
+<script type="text/javascript" src="newsitesoon.js" > </script>
 </html>
