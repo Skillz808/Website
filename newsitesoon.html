@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="newsitesoon.js" > </script>
     <link rel="stylesheet" href="https://unpkg.com/xp.css">
+    <link rel="shortcut icon" href="./img/xpicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./newsitesoon.css">
-    <title>Document</title>
+    <title>1% █▒▒▒▒▒▒▒▒▒</title>
 </head>
 <body>
     <div class="window" style="width: 315px" id="musicplayer">
         <div class="title-bar">
-          <div class="title-bar-text">VLC Media Player... kinda</div>
+          <div class="title-bar-text">Wacky MIDI Player</div>
           <div class="title-bar-controls">
             <button aria-label="Close" onclick="removeMusicPlayer(); "></button>
           </div>
@@ -23,7 +24,7 @@
       </div>
       <div class="window" id="loading">
         <div class="title-bar">
-          <div class="title-bar-text">New Website... Coming Soon?</div>
+          <div class="title-bar-text">1% of newsite.html Completed</div>
           <div class="title-bar-controls">
             <a href="./index.html"><button aria-label="Close" onclick="removeLoading(); " ></button></a>
           </div>
@@ -31,6 +32,11 @@
         <div class="window-body">
             <img src="./img/downloading.gif">
           <p>⠀Opening:<br>⠀newsite.html from SkillzDev.xyz<br><img src="./img/bar.png"><br>⠀Estimated time left: 99999...99...<br>⠀Transfer rate: 2 lines of HTML / Week<br>⠀Time elapsed: <script>time_since_update()</script> Days</p>
+          <section class="field-row" style="justify-content: flex-end">
+            <button disabled>Open</button>
+            <a href="https://github.com/Skillz808/Website"><button>Open Folder</button></a>
+            <a href="./index.html"><button onclick="removeLoading(); ">Cancel</button></a>
+          </section>
         </div>
       </div>
 </body>
