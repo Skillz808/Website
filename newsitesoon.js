@@ -8,6 +8,11 @@ function removeLoading() {
     kill.parentNode.removeChild(kill);
    }
 
+function removeGame() {
+    var die = document.getElementById('amogus');
+    die.parentNode.removeChild(die);
+   }
+
 function time_since_update() {
 
     last_update = new Date('2022-01-11')
@@ -26,6 +31,7 @@ function play_custom_file(){
 
 dragElement(document.getElementById("loading"));
 dragElement(document.getElementById("musicplayer"));
+dragElement(document.getElementById("amogus"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -67,3 +73,5 @@ function closeDragElement(){
     document.onmousemove = null;
   }
 }
+
+
