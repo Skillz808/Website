@@ -1,21 +1,22 @@
-html{
-    background-image: url(./img/bliss.jpg);
+html {
+  background-image: url(./img/bliss.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: -webkit-fill-available;
+  height: 100%;
 }
 
-#loading{
-    position: absolute;
-    display: inline-block;
-    width: 485px;
-    height: 235px;
-
+#loading {
+  position: absolute;
+  display: inline-block;
+  width: 485px;
+  height: 235px;
 }
 
-#musicplayer{
-    position: absolute;
+#musicplayer {
+  position: absolute;
 }
 
-#amogus{
-    position: absolute;
-    
+#amogus {
+  position: absolute;
 }
-
