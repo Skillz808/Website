@@ -28,10 +28,17 @@ function play_custom_file(){
     document.getElementById('audioplayer').src = link
 }
 
+function play_secret_file(){
+  var link = "https://vgmsite.com/soundtracks/portal-2-gamerip/sydhucbsud/1-02%209999999%20%28Title%20Screen%20A%29.mp3"
+  document.getElementById('audioplayer').src = link
+  document.getElementById('text21').value = "Portal 2 OST - 9999999";
+}
+
 
 dragElement(document.getElementById("loading"));
 dragElement(document.getElementById("musicplayer"));
 dragElement(document.getElementById("amogus"));
+dragElement(document.getElementById("donate"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
