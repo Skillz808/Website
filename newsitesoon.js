@@ -29,9 +29,9 @@ function play_custom_file(){
 }
 
 function play_secret_file(){
-  var link = "https://vgmsite.com/soundtracks/portal-2-gamerip/sydhucbsud/1-02%209999999%20%28Title%20Screen%20A%29.mp3"
+  var link = "./img/radio.flac"
   document.getElementById('audioplayer').src = link
-  document.getElementById('text21').value = "Portal 2 OST - 9999999";
+  document.getElementById('text21').value = "Portal 2 OST - Still Alive (Radio Mix Clean)";
 }
 
 
