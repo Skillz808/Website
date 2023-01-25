@@ -8,8 +8,8 @@ function removeLoading() {
     kill.parentNode.removeChild(kill);
    }
 
-function removeGame() {
-    var die = document.getElementById('amogus');
+function removeTour() {
+    var die = document.getElementById('aboutme');
     die.parentNode.removeChild(die);
    }
 
@@ -37,8 +37,8 @@ function play_secret_file(){
 
 dragElement(document.getElementById("loading"));
 dragElement(document.getElementById("musicplayer"));
-dragElement(document.getElementById("amogus"));
-dragElement(document.getElementById("donate"));
+dragElement(document.getElementById('aboutme'));
+
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;

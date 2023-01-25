@@ -11,7 +11,7 @@
     <title>5% ██▒▒▒▒▒▒▒▒</title>
 </head>
 <body>
-    <div class="window" style="width: 315px; top: 20px; left: 20px;" id="musicplayer">
+    <div class="window" style="width: 315px; top: 10px; left: 10px;" id="musicplayer">
         <div class="title-bar" id="musicplayerheader">
           <div class="title-bar-text">Wacky MP3 Player <span style="opacity: 0;">It is a mystery</span></div>
           <div class="title-bar-controls">
@@ -27,7 +27,7 @@
             </div>
         </div>
       </div>
-      <div class="window" style="top: 150px; left: 20px;" id="loading">
+      <div class="window" style="top: 150px; left: 10px;" id="loading">
         <div class="title-bar" id="loadingheader">
           <div class="title-bar-text">5% of newsite.html Completed</div>
           <div class="title-bar-controls">
@@ -44,15 +44,35 @@
           </section>
         </div>
       </div>
-      <div class="window" style="top: 100px; left: 600px;" id="amogus">
-        <div class="title-bar">
-          <div class="title-bar-text">Mario & Luigi: Battle Simulator</div>
+      <div class="window" style="top: 400px; left: 10px;" id="aboutme">
+        <div class="title-bar" id="aboutmeheader">
+          <div class="title-bar-text">skillzdev.xyz Tour <span style="opacity: 0;">what? theres nothing here...</span></div>
           <div class="title-bar-controls">
-            <button aria-label="Close" onclick="removeGame(); "></button>
+            <button aria-label="Close" onclick="removeTour(); "></button>
           </div>
         </div>
         <div class="window-body">
-          <iframe frameborder="0" src="https://itch.io/embed-upload/6110661?color=161616" allowfullscreen="" width="530" height="800"></iframe>
+          <img src="./img/windowsxp.png" style="position: absolute; top: 28px; left: 3px;">
+              <p style="position: absolute; top: 20px; left: 180px; font-size: 200%;"> Welcome to the skillzdev.xyz website!</p>
+              <label for="text22" style="position: absolute; top: 105px; left: 180px;"> Welcome to my website! <br><br> Here you will find all sorts of self centered things about me like my passions, projects and interests. <br><br> You will be able find out more by choosing an option below... eventually.</label>#
+              <div class="field-row" style="position: absolute; top: 200px; left: 180px;">
+                <input disabled id="radio7" type="radio" name="second-example">
+                <label for="radio7">About Me</label>
+              </div>
+              <div class="field-row" style="position: absolute; top: 215px; left: 180px;">
+                <input disabled id="radio8" type="radio" name="second-example">
+                <label for="radio8">Current Projects</label>
+              </div>
+              <div class="field-row" style="position: absolute; top: 236px; left: 180px;">
+                <input disabled id="radio9" type="radio" name="second-example" >
+                <label for="radio9">Contact Info</label>
+              </div>
+              <section class="field-row" style="justify-content: flex-end; position: absolute; top: 305px; left: 240px;">
+                <button disabled>< Back</button>
+                <button>Next ></button>
+                <button onclick="removeTour(); ">Cancel</button>
+              </section>
+            </div>
         </div>
       </div>
 </body>
