@@ -13,6 +13,11 @@ function removeTour() {
     die.parentNode.removeChild(die);
    }
 
+function removeInfo() {
+    var commit = document.getElementById('sysinfo');
+    commit.parentNode.removeChild(commit);
+   }
+
 function time_since_update() {
 
     last_update = new Date('2022-01-11')
@@ -38,6 +43,7 @@ function play_secret_file(){
 dragElement(document.getElementById("loading"));
 dragElement(document.getElementById("musicplayer"));
 dragElement(document.getElementById('aboutme'));
+dragElement(document.getElementById('sysinfo'));
 
 
 function dragElement(elmnt) {
@@ -78,6 +84,17 @@ function closeDragElement(){
     // stop moving when mouse button is released:
     document.onmouseup = null;
     document.onmousemove = null;
+  }
+
+  function openTab(event, tab) {
+    const articles = tab.parentNode.querySelectorAll('[role="tabpanel"]');
+    articles.forEach((p) => {
+      p.setAttribute("hidden", true);
+    });
+    const article = tab.parentNode.querySelector(
+      `[role="tabpanel"]#${event.target.getAttribute("aria-controls")}`
+    );
+    article.removeAttribute("hidden");
   }
 }
 

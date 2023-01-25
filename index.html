@@ -11,6 +11,32 @@
     <title>5% ██▒▒▒▒▒▒▒▒</title>
 </head>
 <body>
+  <div class="window" style="width: 480px; height: 400px; position: absolute; z-index: -1; left: 500px;" id="sysinfo">
+    <div class="title-bar">
+      <div class="title-bar-text">System Properties</div>
+      <div class="title-bar-controls">
+        <button aria-label="Close" onclick="removeInfo();"></button>
+      </div>
+    </div>
+    <div class="window-body" style="position: relative; z-index: 0; left: 20;">
+      <menu role="tablist">
+        <button aria-selected="true" aria-controls="music">My Computer</button>
+      </menu>
+      <article role="tabpanel" id="music" style="height: 270px;">
+        <img src="./img/computer.png" style="position: absolute; top: 60px; left: 50px;">
+        <label style="position: absolute; top: 20px; left: 200px;">System:</label>
+        <label style="position: absolute; top: 40px; left: 220px;">Microsoft Windows 10<br><br>Professional x64 Edition<br><br>Version: 21H2<br><br>OS Build: 19044.2364</label>
+        <label style="position: absolute; top: 140px; left: 200px;">Registered To: </label>
+        <label style="position: absolute; top: 160px; left: 220px;">Skillz</label>
+        <label style="position: absolute; top: 190px; left: 200px;">Computer:</label>
+        <label style="position: absolute; top: 210px; left: 220px;">AMD Ryzen 5 3600x 6-Core Processor @ 3.80GHz <br><br> 32GB Ram @ 3600 MHz<br><br>NVIDIA GeForce RTX 3060 Ti</label>
+        </article>
+
+      <section class="field-row" style="justify-content: flex-end">
+        <button onclick="removeInfo();">Cancel</button>
+      </section>
+    </div>
+  </div>
     <div class="window" style="width: 315px; top: 10px; left: 10px;" id="musicplayer">
         <div class="title-bar" id="musicplayerheader">
           <div class="title-bar-text">Wacky MP3 Player <span style="opacity: 0;">It is a mystery</span></div>
