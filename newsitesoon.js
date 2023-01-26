@@ -18,6 +18,11 @@ function removeInfo() {
     commit.parentNode.removeChild(commit);
    }
 
+function removeGuestbook() {
+    var suicide = document.getElementById('guestbook');
+    suicide.parentNode.removeChild(suicide);
+   }   
+
 function time_since_update() {
 
     last_update = new Date('2022-01-11')
@@ -44,6 +49,7 @@ dragElement(document.getElementById("loading"));
 dragElement(document.getElementById("musicplayer"));
 dragElement(document.getElementById('aboutme'));
 dragElement(document.getElementById('sysinfo'));
+dragElement(document.getElementById('guestbook'));
 
 
 function dragElement(elmnt) {
@@ -85,17 +91,5 @@ function closeDragElement(){
     document.onmouseup = null;
     document.onmousemove = null;
   }
-
-  function openTab(event, tab) {
-    const articles = tab.parentNode.querySelectorAll('[role="tabpanel"]');
-    articles.forEach((p) => {
-      p.setAttribute("hidden", true);
-    });
-    const article = tab.parentNode.querySelector(
-      `[role="tabpanel"]#${event.target.getAttribute("aria-controls")}`
-    );
-    article.removeAttribute("hidden");
-  }
 }
-
 

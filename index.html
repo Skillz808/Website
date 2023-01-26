@@ -11,8 +11,8 @@
     <title>5% ██▒▒▒▒▒▒▒▒</title>
 </head>
 <body>
-  <div class="window" style="width: 480px; height: 400px; position: absolute; z-index: -1; left: 500px;" id="sysinfo">
-    <div class="title-bar">
+  <div class="window" style="width: 480px; height: 395px; position: absolute; z-index: -1; left: 500px;" id="sysinfo">
+    <div class="title-bar" id="sysinfoheader">
       <div class="title-bar-text">System Properties</div>
       <div class="title-bar-controls">
         <button aria-label="Close" onclick="removeInfo();"></button>
@@ -23,7 +23,7 @@
         <button aria-selected="true" aria-controls="music">My Computer</button>
       </menu>
       <article role="tabpanel" id="music" style="height: 270px;">
-        <img src="./img/computer.png" style="position: absolute; top: 60px; left: 50px;">
+        <img src="./img/computer.png" style="position: absolute; top: 60px; left: 50px; -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">
         <label style="position: absolute; top: 20px; left: 200px;">System:</label>
         <label style="position: absolute; top: 40px; left: 220px;">Microsoft Windows 10<br><br>Professional x64 Edition<br><br>Version: 21H2<br><br>OS Build: 19044.2364</label>
         <label style="position: absolute; top: 140px; left: 200px;">Registered To: </label>
@@ -79,7 +79,7 @@
         </div>
         <div class="window-body">
           <img src="./img/windowsxp.png" style="position: absolute; top: 28px; left: 3px;">
-              <p style="position: absolute; top: 20px; left: 180px; font-size: 200%;"> Welcome to the skillzdev.xyz website!</p>
+              <p style="position: absolute; top: 20px; left: 180px; font-size: 200%;"> Welcome to the skillzdev.xyz Tour!</p>
               <label for="text22" style="position: absolute; top: 105px; left: 180px;"> Welcome to my website! <br><br> Here you will find all sorts of self centered things about me like my passions, projects and interests. <br><br> You will be able find out more by choosing an option below... eventually.</label>#
               <div class="field-row" style="position: absolute; top: 200px; left: 180px;">
                 <input disabled id="radio7" type="radio" name="second-example">
@@ -100,6 +100,30 @@
               </section>
             </div>
         </div>
+        <div class="window" style="left: 990px;" id="guestbook">
+          <div class="title-bar" id="guestbookheader">
+            <div class="title-bar-text">skillzdev.xyz Guest Book</div>
+            <div class="title-bar-controls">
+              <button aria-label="Close" onclick="removeGuestbook(); "></button>
+            </div>
+          </div>
+          <div class="window-body">
+          <div class="entrysq" style="max-height: 270px; overflow: auto;">
+            <div id="messages">
+            <script type="text/javascript" src="getComments.js"></script>
+            </div>
+        </div>
+            <div class="field-row-vertical" style=" position: absolute; bottom: 3%; left: 2.5%;">
+              <form action="submit-message.php" method="post">
+              <label>Name:</label>
+              <input type="text" name="username" maxlength="20" placeholder="Leave empty for anon">
+              <label>Comment: </label>
+              <textarea name="comment" maxlength="280" style="width: 200px; height: 25px; overflow:hidden; resize: none; position: absolute; bottom: 0%; left: 102%;"></textarea>
+              <input type="submit" name="submitted" value="Submit" style="position: absolute; right: -133%; bottom: 10%;">
+              </form>
+            </div>
+              </div>
+          </div>
       </div>
 </body>
 <script type="text/javascript" src="newsitesoon.js" > </script>

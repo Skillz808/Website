@@ -1,9 +1,9 @@
 html {
-  background-image: url(./img/bliss.jpg);
-  background-repeat: no-repeat;
+  background: url(img/bliss.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  height: -webkit-fill-available;
-  height: 100%;
 }
 
 #loading {
@@ -21,5 +21,11 @@ html {
   position: absolute;
   width: 485px;
   height: 342px;
+}
+
+#guestbook {
+  position: absolute;
+  width: 485px;
+  height: 395px;
 }
 
