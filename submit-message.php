@@ -23,6 +23,6 @@ if(!empty($comment)){
     file_put_contents('data.json', json_encode($submission));
 }
 
-header('Location: index.html');
+header("refresh:0;url=index.html"); 
 
 ?>
