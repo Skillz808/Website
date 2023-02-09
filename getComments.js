@@ -20,4 +20,5 @@ xhr.onreadystatechange = function() {
 };
 xhr.send();
 
-//I pretty much stole this from https://articexploit.xyz:8443... please don't get mad at me :(
+//You can find the source for this here: https://github.com/ArticExploit/guestbook
+//Thanks Artic :)
