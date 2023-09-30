@@ -92,6 +92,21 @@ function closeDragElement(){
     document.onmousemove = null;
   }
 
+  document.addEventListener("DOMContentLoaded", playRandomAudio);
+  function playRandomAudio() {
+    const audio = document.getElementById("audioplayer");
+
+    const randomValue = Math.random();
+
+    if (randomValue < 0.9) {
+        audio.src = "./img/Addiction.wav";
+        document.getElementById('text21').value = "Jogeir Liljedahl - Addiction";
+    } else {
+        document.getElementById('text21').value = "Homebrew Browser - Main Theme (SiivaGunner Version)";
+        audio.src = "./img/grandAddiction.mp3"; 
+    }
+}
+
   document.addEventListener('DOMContentLoaded', function() {
     var audio = document.getElementById('audioplayer');
     var hasAlreadyClicked = false;
