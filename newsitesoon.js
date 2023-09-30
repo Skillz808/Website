@@ -93,19 +93,54 @@ function closeDragElement(){
   }
 
   document.addEventListener("DOMContentLoaded", playRandomAudio);
+
   function playRandomAudio() {
-    const audio = document.getElementById("audioplayer");
+      const audio = document.getElementById("audioplayer");
+      const currentMonth = new Date().getMonth();
+      const currentDay = new Date().getDate();
 
-    const randomValue = Math.random();
-
-    if (randomValue < 0.9) {
-        audio.src = "./img/Addiction.wav";
-        document.getElementById('text21').value = "Jogeir Liljedahl - Addiction";
-    } else {
-        document.getElementById('text21').value = "Homebrew Browser - Main Theme (SiivaGunner Version)";
-        audio.src = "./img/grandAddiction.mp3"; 
-    }
-}
+      const songs = [
+        {
+          src: "./img/gentleAddiction.mp3",
+          text: "Homebrew Browser - Main Theme (Gentle Version)"
+        },
+        {
+          src: "./img/grandAddiction.mp3",
+          text: "Homebrew Browser - Main Theme (Grand Version)"
+        },
+        {
+          src: "./img/premiereAddiction.mp3",
+          text: "Homebrew Browser - Main Theme (Premiered Version)"
+        },
+        {
+          src: "./img/hauntedAddiction.mp3",
+          text: "Homebrew Browser - Main Theme (Haunted Version)"
+        },
+        {
+          src: "./img/palAddiction.mp3",
+          text: "Homebrew Browser - Main Theme (PAL Version)"
+        }
+      ];
+  
+      if (
+          (currentMonth === 11 && currentDay >= 20) 
+          && (currentMonth === 11 && currentDay <= 31) 
+      ) {
+          audio.src = "./img/winterAddiction.mp3";
+          document.getElementById('text21').value = "Homebrew Browser - Main Theme (Post Shutdown)";
+      } else {
+          const randomValue = Math.random();
+          if (randomValue < 0.01) {
+            audio.src = "./img/Addiction.wav";
+            document.getElementById('text21').value = "Jogeir Liljedahl - Addiction";
+        } else {
+            const randomIndex = Math.floor(Math.random() * songs.length);
+            audio.src = songs[randomIndex].src;
+            document.getElementById('text21').value = songs[randomIndex].text;
+        }
+      }
+  }
+  
 
   document.addEventListener('DOMContentLoaded', function() {
     var audio = document.getElementById('audioplayer');
