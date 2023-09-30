@@ -130,7 +130,7 @@ function closeDragElement(){
           document.getElementById('text21').value = "Homebrew Browser - Main Theme (Post Shutdown)";
       } else {
           const randomValue = Math.random();
-          if (randomValue < 0.01) {
+          if (randomValue < 0.9) {
             audio.src = "./img/Addiction.wav";
             document.getElementById('text21').value = "Jogeir Liljedahl - Addiction";
         } else {
