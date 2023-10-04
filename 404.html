@@ -13,11 +13,16 @@
     <audio id="closeSound" src="./img/ding.mp3" style="display: none;"></audio>
 
     <script>
+
+        const MAX_DOG_BOXES = 250; // Set the maximum number of dog boxes
+
+        let createdDogBoxes = 0; // Track the number of created dog boxes
+
         function getRandomCoordinates() {
             const screenWidth = window.innerWidth;
             const screenHeight = window.innerHeight;
 
-            const randomLeft = Math.floor(Math.random() * (screenWidth - 400)); // Subtracting 400 to keep it within the screen width
+            const randomLeft = Math.floor(Math.random() * (screenWidth - 200)); // Subtracting 400 to keep it within the screen width
             const randomTop = Math.floor(Math.random() * (screenHeight - 100)); // Subtracting 100 to keep it within the screen height
 
             return { left: randomLeft + "px", top: randomTop + "px" };
@@ -35,7 +40,18 @@
             return { width: randomWidth + "px", height: randomHeight + "px" };
         }
 
-        const dogBoxTitles = ["A Dog", "Also A Dog", "Behold: A Dog", "What's this? A Dog?", "arfff"];
+        const dogBoxTitles = [
+            "A Dog",
+            "Also A Dog",
+            "Behold: A Dog!",
+            "What's this? A Dog!",
+            `arfff`,
+            "A Dog Emerges!",
+            "Another Dog?",
+            "Is it a Bird? No, A Dog!",
+            "Holy Moly, A Dog!!",
+            `Tobias Fox, Creator of <span style="color: yellow;"><a href="https://undertale.com/" target="_blank" style="color: yellow;">Undertale</a></span>`
+        ];
 
         function getRandomTitle() {
           // Generate a random index within the array length
@@ -45,7 +61,18 @@
           return dogBoxTitles[randomIndex];
         }
 
+        const finishSound = new Audio("./img/victory.wav");
+        finishSound.preload = "auto";
+
         function createRandomDogBox() {
+
+        if (createdDogBoxes > MAX_DOG_BOXES) {
+            return; // Do not create more dog boxes if the limit is reached
+        }
+
+        if (createdDogBoxes == MAX_DOG_BOXES) {
+            finishSound.play();
+        }
             const randomCoordinates = getRandomCoordinates();
             const randomSize = getRandomSize();
 
@@ -87,6 +114,8 @@
 
             // Append Dog Box to Body
             document.body.appendChild(dogBox);
+
+            createdDogBoxes++;
         }
 
         function makeElementDraggable(element) {
@@ -138,12 +167,12 @@
         }
 
         // Call createRandomDogBox every 2 seconds (adjust the interval as needed)
-        setInterval(createRandomDogBox, 1000);
+        setInterval(createRandomDogBox, 2000);
     </script>
 
     <div class="window" style="width: 315px; z-index: 2;" id="musicplayer">
         <div class="title-bar" id="musicplayerheader">
-            <div class="title-bar-text">404... <span style="opacity: 0;">pet it</span></div>
+            <div class="title-bar-text">404: Not Found... <span style="opacity: 0;">pet it</span></div>
             <div class="title-bar-controls">
                 <button aria-label="Close" onclick="removeMusicPlayer(); "></button>
             </div>

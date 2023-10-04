@@ -55,13 +55,13 @@ function closeDragElement(){
 
       const songs = [
         {
-          src: "./img/dogshrine_2.ogg",
+          src: "./img/dogshrine_2.mp3",
         },
         {
-          src: "./img/dogroom.ogg",
+          src: "./img/dogroom.mp3",
         },
         {
-          src: "./img/dogshrine.ogg",
+          src: "./img/dogshrine.mp3",
         }
       ];
   
@@ -91,7 +91,7 @@ function closeDragElement(){
     function startAudio() {
         if (hasAlreadyClicked == false) {
             audio.play();
-            audio.volume = 0.5;
+            audio.volume = 0.75;
             document.removeEventListener('click', startAudio);
             hasAlreadyClicked = true;
         }
