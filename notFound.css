@@ -1,0 +1,49 @@
+html {
+  background: url(img/undertale-annoying.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#loading {
+  position: absolute;
+  display: inline-block;
+  width: 485px;
+  height: 235px;
+}
+
+#musicplayer {
+  position: absolute;
+}
+
+#aboutme {
+  position: absolute;
+  width: 485px;
+  height: 342px;
+}
+
+#dogbox {
+  position: absolute;
+  width: 485px;
+  height: 395px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.footer img {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
