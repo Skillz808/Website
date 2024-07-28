@@ -25,11 +25,11 @@
       <article role="tabpanel" id="music" style="height: 270px;">
         <img src="./img/computer.png" style="position: absolute; top: 60px; left: 50px; -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">
         <label style="display:block; position: absolute; top: 20px; left: 200px;">System:</label>
-        <label style="display:block; position: absolute; top: 40px; left: 220px;">Microsoft Windows 10<br><br>Professional x64 Edition<br><br>Version: 21H2<br><br>OS Build: 19044.3086</label>
+        <label style="display:block; position: absolute; top: 40px; left: 220px;">Microsoft Windows 11<br><br>Professional x64 Edition<br><br>Version: 23H2<br><br>OS Build: 22631.3880</label>
         <label style="display:block; position: absolute; top: 140px; left: 200px;">Registered To: </label>
         <label style="display:block; position: absolute; top: 160px; left: 220px;">Skillz</label>
         <label style="display:block; position: absolute; top: 190px; left: 200px;">Computer:</label>
-        <label style="display:block; position: absolute; top: 210px; left: 220px;">AMD Ryzen 7 7700 8-Core Processor @ 3.80GHz <br><br> 32GB Ram @ 5600 MHz<br><br>NVIDIA GeForce RTX 3060 Ti</label>
+        <label style="display:block; position: absolute; top: 210px; left: 220px;">AMD Ryzen 7 7700 8-Core Processor @ 3.80GHz <br><br> 64GB Ram @ 5600 MHz<br><br>NVIDIA GeForce RTX 4070 SUPER</label>
         </article>
 
       <section class="field-row" style="justify-content: flex-end">
@@ -101,6 +101,7 @@
               </section>
             </div>
         </div>
+        <!-- CURRENTLY NOT IN USE
         <div class="window" style="left: 990px;" id="guestbook">
           <div class="title-bar" id="guestbookheader">
             <div class="title-bar-text">skillzdev.xyz Guest Book</div>
@@ -124,11 +125,25 @@
               </form>
             </div>
               </div>
+          </div> 
+          -->
+          <div class="window" style="left: 990px;" id="voltorbflip">
+            <div class="title-bar" id="voltorbflipheader">
+              <div class="title-bar-text">Voltorb Flip by <span style="color: yellow;"><a href="https://github.com/steiner26/voltorbflip" target="_blank" style="color: yellow;">steiner26</a></span></div>
+              <div class="title-bar-controls">
+                <button aria-label="Close" onclick="removeGuestbook(); "></button>
+              </div>
+            </div>
+            <div class="window-body">
+              <embed type="text/html" src="./voltorbflip/index.html" width="600" height="650">
+              <!-- Transparent overlay div -->
+              <div class="overlay" onclick="handleOverlayClick()"></div>
+            </div>
           </div>
           <div class="footer">
             <img src="./img/taskbar.jpg" alt="">
           </div>
-      </div>
+        </div>
 </body>
 <script type="text/javascript" src="newsitesoon.js" > </script>
 </html>

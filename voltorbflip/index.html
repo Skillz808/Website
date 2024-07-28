@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <link rel="shortcut icon" href="favicon.co">
+    <title>Voltorb Flip</title>
+</head>
+<body>
+<div class="score-container">
+    <div class="level-container">Level: <span id="level">1</span></div>
+    <div class="total-coins">Total Coins: <span id="total-coins">00000</span></div>
+    <div class="current-coins">Coins collected this level: <span id="current-coins">00000</span></div>
+</div>
+<div class="game-container">
+    <div class="game-row">
+    <div class="board-container">
+        <div class="board-row">
+            <div class="tile">
+                <div class="tile_face tile_front"></div>
+                <div class="tile_face tile_back"></div>
+            </div>
+            <div class="tile">
+                <div class="tile_face tile_front"></div>
+                <div class="tile_face tile_back"></div>
+            </div>
+            <div class="tile">
+                <div class="tile_face tile_front"></div>
+                <div class="tile_face tile_back"></div>
+            </div>
+            <div class="tile">
+                <div class="tile_face tile_front"></div>
+                <div class="tile_face tile_back"></div>
+            </div>
+            <div class="tile">
+                <div class="tile_face tile_front"></div>
+                <div class="tile_face tile_back"></div>
+            </div>
+        </div>
+        <div class="board-row">
+            <div class="tile">
+                <div class="tile_face tile_front"></div>
+                <div class="tile_face tile_back"></div>
+            </div>
+            <div class="tile">
+                <div class="tile_face tile_front"></div>
+                <div class="tile_face tile_back"></div>
+            </div>
+            <div class="tile">
+                <div class="tile_face tile_front"></div>
+                <div class="tile_face tile_back"></div>
+            </div>
+            <div class="tile">
+                <div class="tile_face tile_front"></div>
+                <div class="tile_face tile_back"></div>
+            </div>
+            <div class="tile">
+                <div class="tile_face tile_front"></div>
+                <div class="tile_face tile_back"></div>
+            </div>
+        </div>
+        <div class="board-row">
+            <div class="tile">
+                <div class="tile_face tile_front"></div>
+                <div class="tile_face tile_back"></div>
+            </div>
+            <div class="tile">
+                <div class="tile_face tile_front"></div>
+                <div class="tile_face tile_back"></div>
+            </div>
+            <div class="tile">
+                <div class="tile_face tile_front"></div>
+                <div class="tile_face tile_back"></div>
+            </div>
+            <div class="tile">
+                <div class="tile_face tile_front"></div>
+                <div class="tile_face tile_back"></div>
+            </div>
+            <div class="tile">
+                <div class="tile_face tile_front"></div>
+                <div class="tile_face tile_back"></div>
+            </div>
+        </div>
+        <div class="board-row">
+            <div class="tile">
+                <div class="tile_face tile_front"></div>
+                <div class="tile_face tile_back"></div>
+            </div>
+            <div class="tile">
+                <div class="tile_face tile_front"></div>
+                <div class="tile_face tile_back"></div>
+            </div>
+            <div class="tile">
+                <div class="tile_face tile_front"></div>
+                <div class="tile_face tile_back"></div>
+            </div>
+            <div class="tile">
+                <div class="tile_face tile_front"></div>
+                <div class="tile_face tile_back"></div>
+            </div>
+            <div class="tile">
+                <div class="tile_face tile_front"></div>
+                <div class="tile_face tile_back"></div>
+            </div>
+        </div>
+        <div class="board-row">
+            <div class="tile">
+                <div class="tile_face tile_front"></div>
+                <div class="tile_face tile_back"></div>
+            </div>
+            <div class="tile">
+                <div class="tile_face tile_front"></div>
+                <div class="tile_face tile_back"></div>
+            </div>
+            <div class="tile">
+                <div class="tile_face tile_front"></div>
+                <div class="tile_face tile_back"></div>
+            </div>
+            <div class="tile">
+                <div class="tile_face tile_front"></div>
+                <div class="tile_face tile_back"></div>
+            </div>
+            <div class="tile">
+                <div class="tile_face tile_front"></div>
+                <div class="tile_face tile_back"></div>
+            </div>
+        </div>
+        <div class="game-message hidden"></div>
+    </div>
+
+    <div class="info_container info_rows">
+        <div class="info info-1">
+            <div class="info_points"></div>
+            <div class="info_bombs"></div>
+        </div>
+        <div class="info info-2">
+            <div class="info_points"></div>
+            <div class="info_bombs"></div>
+        </div>
+        <div class="info info-3">
+            <div class="info_points"></div>
+            <div class="info_bombs"></div>
+        </div>
+        <div class="info info-4">
+            <div class="info_points"></div>
+            <div class="info_bombs"></div>
+        </div>
+        <div class="info info-5">
+            <div class="info_points"></div>
+            <div class="info_bombs"></div>
+        </div>
+    </div>
+    </div>
+
+    <div class="game-row">
+    <div class="info_container info_cols">
+        <div class="info info-1">
+            <div class="info_points"></div>
+            <div class="info_bombs"></div>
+        </div>
+        <div class="info info-2">
+            <div class="info_points"></div>
+            <div class="info_bombs"></div>
+        </div>
+        <div class="info info-3">
+            <div class="info_points"></div>
+            <div class="info_bombs"></div>
+        </div>
+        <div class="info info-4">
+            <div class="info_points"></div>
+            <div class="info_bombs"></div>
+        </div>
+        <div class="info info-5">
+            <div class="info_points"></div>
+            <div class="info_bombs"></div>
+        </div>
+    </div>
+    </div>
+</div>  
+
+<script src="code/jquery-3.3.1.min.js"></script>
+<script src="code/chance.min.js"></script>
+<script src="code/levels.js"></script>
+<script src="code/info.js"></script>
+<script src="code/tile.js"></script>
+<script src="code/board.js"></script>
+<script src="code/htmlManager.js"></script>
+<script src="code/gameManager.js"></script>
+<script src="code/application.js"></script>
+</body>
+</html>

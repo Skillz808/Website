@@ -19,7 +19,7 @@ function removeInfo() {
    }
 
 function removeGuestbook() {
-    var suicide = document.getElementById('guestbook');
+    var suicide = document.getElementById('voltorbflip');
     suicide.parentNode.removeChild(suicide);
    }   
 
@@ -44,12 +44,27 @@ function play_secret_file(){
   document.getElementById('text21').value = "Portal 2 OST - Still Alive (Radio Mix Clean)";
 }
 
+function playGameAudio() {
+  var audioPlayer = document.getElementById('audioplayer');
+  if (audioPlayer) {
+    audioPlayer.src="https://vgmtreasurechest.com/soundtracks/pokemon-heartgold-and-soulsilver/gtmghjfzvk/049%20Goldenrod%20Game%20Corner.mp3";
+    document.getElementById('text21').value = "Goldenrod Game Corner"
+  }
+}
+
+function handleOverlayClick() {
+  playGameAudio();
+  var overlay = document.querySelector('.overlay');
+  if (overlay) {
+    overlay.remove();
+  }
+}
 
 dragElement(document.getElementById("loading"));
 dragElement(document.getElementById("musicplayer"));
 dragElement(document.getElementById('aboutme'));
 dragElement(document.getElementById('sysinfo'));
-dragElement(document.getElementById('guestbook'));
+dragElement(document.getElementById('voltorbflip'));
 
 
 function dragElement(elmnt) {
@@ -101,24 +116,12 @@ function closeDragElement(){
 
       const songs = [
         {
-          src: "./img/gentleAddiction.mp3",
-          text: "Homebrew Browser - Main Theme (Gentle Version)"
+          src: "https://vgmsite.com/soundtracks/pokemon-emerald-remastered-complete-original-soundtrack/gixmvcmxox/1-11%20-%20Route%20101.mp3",
+          text: "Pokémon Emerald - Route 101"
         },
         {
-          src: "./img/grandAddiction.mp3",
-          text: "Homebrew Browser - Main Theme (Grand Version)"
-        },
-        {
-          src: "./img/premiereAddiction.mp3",
-          text: "Homebrew Browser - Main Theme (Premiered Version)"
-        },
-        {
-          src: "./img/hauntedAddiction.mp3",
-          text: "Homebrew Browser - Main Theme (Haunted Version)"
-        },
-        {
-          src: "./img/palAddiction.mp3",
-          text: "Homebrew Browser - Main Theme (PAL Version)"
+          src: "https://vgmtreasurechest.com/soundtracks/pokemon-heartgold-and-soulsilver/gmzxvzrqib/055%20Nintendo%20Wi-Fi%20Connection.mp3",
+          text: "Pokémon HGSS - Nintendo WFC"
         }
       ];
   
@@ -131,8 +134,8 @@ function closeDragElement(){
       } else {
           const randomValue = Math.random();
           if (randomValue < 0.9) {
-            audio.src = "./img/Addiction.wav";
-            document.getElementById('text21').value = "Jogeir Liljedahl - Addiction";
+            audio.src = "https://vgmtreasurechest.com/soundtracks/pokemon-heartgold-and-soulsilver/yxqkoegtyn/157.%20Pok%C3%A9gear%20Radio%20%28Route%20101%29.mp3";
+            document.getElementById('text21').value = "Pokégear Radio (Route 101)";
         } else {
             const randomIndex = Math.floor(Math.random() * songs.length);
             audio.src = songs[randomIndex].src;
