@@ -86,8 +86,14 @@ HTMLManager.prototype.setTotalCoins = function (coins) {
 HTMLManager.prototype.gameOverMessage = function (coins, win, manager) {
   if (coins) {
     this.messageContainer.innerHTML = "Game clear! You received " + coins.toString() + " Coin(s)!";
+    const winSound = new Audio("../files/voltorbflipsounds/win.mp3");
+    winSound.preload = "auto";
+    winSound.play();
   } else {
     this.messageContainer.innerHTML = "Oh no! you get 0 Coins!";
+    const explodeSound = new Audio("../files/voltorbflipsounds/explode.mp3");
+    explodeSound.preload = "auto";
+    explodeSound.play();
   }
   $(".game-message").toggleClass("fadeIn animated hidden clickable");
   $(".tile_front").removeClass("clickable");

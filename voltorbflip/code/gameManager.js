@@ -9,14 +9,35 @@ function GameManager (Manager) {
 }
 
 GameManager.prototype.flip = function (pos) {
-  result = this.board.flip(pos)
-  if (result == 0) {
+  // Store the previous value of currentCoins
+  const previousCoins = this.currentCoins || 0;
+
+  // Perform the flip action
+  const result = this.board.flip(pos);
+
+  if (result === 0) {
+    // Game over scenario
     this.currentCoins = 0;
     this.htmlManager.setCurrentCoins(this.currentCoins);
     this.htmlManager.gameOverMessage(this.currentCoins, false, this);
   } else if (result != null) {
-    this.currentCoins = (this.currentCoins ? this.currentCoins * result : result);
+    // Update currentCoins based on the result
+    this.currentCoins = (previousCoins ? previousCoins * result : result);
     this.htmlManager.setCurrentCoins(this.currentCoins);
+
+    // Check if currentCoins has increased and play the sound
+    if (this.currentCoins > previousCoins) {
+      const scoreFlipSound = new Audio("../files/voltorbflipsounds/scoreflip.mp3");
+      scoreFlipSound.preload = "auto";
+      scoreFlipSound.play();
+    }
+    else{
+      const flipSound = new Audio("../files/voltorbflipsounds/flip.mp3");
+      flipSound.preload = "auto";
+      flipSound.play();
+    }
+
+    // Check if the game has been won
     if (this.currentCoins == this.board.totalCoins) {
       this.htmlManager.gameOverMessage(this.currentCoins, true, this);
     }
