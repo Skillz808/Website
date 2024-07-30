@@ -63,7 +63,7 @@
         </div>
         <div class="window-body">
             <img src="./img/downloading.gif">
-          <p>⠀Opening:<br>⠀newsite.html from SkillzDev.xyz<br><img src="./img/bar.png"><br>⠀Estimated time left: <a style="color: black;" type="button" onclick="play_secret_file(), removeGame(); ">9999999</a> <!-- funny number --> <br>⠀Transfer rate: 0.001 bytes / hour<br>⠀Time elapsed: <script>time_since_update()</script> Days</p>
+          <p>⠀Opening:<br>⠀newsite.html from skillzdev.xyz<br><img src="./img/bar.png"><br>⠀Estimated time left: <a style="color: black;" type="button" onclick="play_secret_file(), removeGame(); ">9999999</a> <!-- funny number --> <br>⠀Transfer rate: 0.001 bytes / hour<br>⠀Time elapsed: <script>time_since_update()</script></p>
           <section class="field-row" style="justify-content: flex-end">
             <button disabled>Open</button>
             <a href="https://github.com/Skillz808/Website"><button>Open Folder</button></a>
@@ -131,7 +131,7 @@
             <div class="title-bar" id="voltorbflipheader">
               <div class="title-bar-text">Voltorb Flip by <span style="color: yellow;"><a href="https://github.com/steiner26/voltorbflip" target="_blank" style="color: yellow;">steiner26</a></span></div>
               <div class="title-bar-controls">
-                <button aria-label="Close" onclick="removeGuestbook(); "></button>
+                <button aria-label="Close" onclick="removeVoltorbFlip(); "></button>
               </div>
             </div>
             <div class="window-body">
@@ -139,6 +139,46 @@
               <!-- Transparent overlay div -->
               <div class="overlay" onclick="handleOverlayClick()"></div>
             </div>
+          </div>
+
+          <div class="window" style="left:600px; top: 300px;" id="jspaint">
+            <div class="title-bar" id="jspaintheader">
+              <div class="title-bar-text">JSPaint by <span style="color: yellow;"><a href="https://github.com/1j01/jspaint" target="_blank" style="color: yellow;">1j01</a></span></div>
+              <div class="title-bar-controls">
+                <button aria-label="Close" onclick="removeJsPaint(); "></button>
+              </div>
+            </div>
+            <div class="window-body">
+              <iframe src="https://jspaint.app" width="770px" height="600px"></iframe>
+            </div>
+          </div>
+
+          <div id="desktop-icons">
+            <div class="icon" onclick="reopenWindow('sysinfo')">
+              <img src="./img/sysproperties.webp" alt="System Properties">
+              <span>System Properties</span>
+            </div>
+            <div class="icon" onclick="reopenWindow('musicplayer')">
+              <img src="./img/mediaplayer.png" alt="Wacky MP3 Player">
+              <span>Wacky MP3 Player</span>
+            </div>
+            <div class="icon" onclick="reopenWindow('loading')">
+              <img src="./img/internetexplorer.png" alt="Loading">
+              <span>Download Progress</span>
+            </div>
+            <div class="icon" onclick="reopenWindow('aboutme')">
+              <img src="./img/Tour_XP.webp" alt="About Me">
+              <span>skillzdev.xyz Tour</span>
+            </div>
+            <div class="icon" onclick="reopenWindow('voltorbflip')">
+              <img src="./voltorbflip/images/voltorb.png" alt="voltorbflip">
+              <span>Voltorb Flip</span>
+            </div>
+            <div class="icon" onclick="reopenWindow('jspaint')">
+              <img src="./img/jspaint.png" alt="voltorbflip">
+              <span>JSPaint</span>
+            </div>
+            <!-- Add more icons as needed -->
           </div>
           <div class="footer">
             <img src="./img/taskbar.jpg" alt="">
