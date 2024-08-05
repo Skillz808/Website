@@ -84,15 +84,44 @@ HTMLManager.prototype.setTotalCoins = function (coins) {
 }
 
 HTMLManager.prototype.gameOverMessage = function (coins, win, manager) {
+  // Get the song index from the query parameters
+  var urlParams = new URLSearchParams(window.location.search);
+  var songIndex = urlParams.get('songIndex');
+  console.log(songIndex)
+  console.log(urlParams)
+
+  let winSound;
+  let explodeSound;
+
+  // Define different win/loss sounds based on the song index
+  switch (songIndex) {
+    case '0':
+      winSound = new Audio("../files/voltorbflipsounds/win.mp3");
+      explodeSound = new Audio("../files/voltorbflipsounds/explode.mp3");
+      break;
+    case '1':
+      winSound = new Audio("https://vgmsite.com/soundtracks/pokemon-emerald-remastered-complete-original-soundtrack/geiuwtzohy/1-37%20-%20Win.mp3");
+      explodeSound = new Audio("https://vgmsite.com/soundtracks/pokemon-emerald-remastered-complete-original-soundtrack/abccsfufgr/1-38%20-%20Lose.mp3");
+      break;
+    case '2':
+      winSound = new Audio("https://vgmsite.com/soundtracks/pokemon-emerald-remastered-complete-original-soundtrack/geiuwtzohy/1-37%20-%20Win.mp3");
+      explodeSound = new Audio("https://vgmsite.com/soundtracks/pokemon-emerald-remastered-complete-original-soundtrack/abccsfufgr/1-38%20-%20Lose.mp3");
+      break;
+    default:
+      // Fallback sounds
+      winSound = new Audio("../files/voltorbflipsounds/win.mp3");
+      explodeSound = new Audio("../files/voltorbflipsounds/explode.mp3");
+      console.warn("Invalid song index, using default sounds.");
+  }
+
+  winSound.preload = "auto";
+  explodeSound.preload = "auto";
+
   if (coins) {
     this.messageContainer.innerHTML = "Game clear! You received " + coins.toString() + " Coin(s)!";
-    const winSound = new Audio("../files/voltorbflipsounds/win.mp3");
-    winSound.preload = "auto";
     winSound.play();
   } else {
     this.messageContainer.innerHTML = "Oh no! you get 0 Coins!";
-    const explodeSound = new Audio("../files/voltorbflipsounds/explode.mp3");
-    explodeSound.preload = "auto";
     explodeSound.play();
   }
   $(".game-message").toggleClass("fadeIn animated hidden clickable");

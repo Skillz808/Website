@@ -87,11 +87,40 @@ function play_secret_file() {
 function playGameAudio() {
   var audioPlayer = document.getElementById('audioplayer');
   if (audioPlayer) {
-    audioPlayer.src = "https://vgmtreasurechest.com/soundtracks/pokemon-heartgold-and-soulsilver/gtmghjfzvk/049%20Goldenrod%20Game%20Corner.mp3";
-    document.getElementById('text21').value = "Goldenrod Game Corner";
+    // Define the songs and their respective text values
+    var songs = [
+      {
+        src: "https://vgmtreasurechest.com/soundtracks/pokemon-heartgold-and-soulsilver/gtmghjfzvk/049%20Goldenrod%20Game%20Corner.mp3",
+        text: "Goldenrod Game Corner"
+      },
+      {
+        src: "https://vgmsite.com/soundtracks/pokemon-emerald-remastered-complete-original-soundtrack/loevzirrpp/1-36%20-%20Game%20Corner.mp3",
+        text: "Mossdeep City Game Corner"
+      },
+      {
+        src: "https://vgmtreasurechest.com/soundtracks/pokemon-firered-leafgreen-enhanced-soundtrack/dbhonclifa/39%20Celadon%20Game%20Corner.mp3",
+        text: "Celadon Game Corner"
+      }
+    ];
+    
+    // Choose a random song
+    var randomIndex = Math.floor(Math.random() * songs.length);
+    var selectedSong = songs[randomIndex];
+    
+    // Set the src and text values
+    audioPlayer.src = selectedSong.src;
+    document.getElementById('text21').value = selectedSong.text;
     audioPlayer.pause();
     if (isMusicPlayerVisible()) {
       audioPlayer.play();
+    }
+
+    // Update the URL of the embedded page with the song index
+    var iframe = document.getElementById('embeddedPage');
+    if (iframe) {
+      var url = new URL(iframe.src, window.location.origin); // Ensure correct URL context
+      url.searchParams.set('songIndex', randomIndex);
+      iframe.src = url.toString();
     }
   }
 }
@@ -176,6 +205,14 @@ document.addEventListener("DOMContentLoaded", function() {
       {
         src: "https://vgmtreasurechest.com/soundtracks/pokemon-heartgold-and-soulsilver/gmzxvzrqib/055%20Nintendo%20Wi-Fi%20Connection.mp3",
         text: "Pokémon HGSS - Nintendo WFC"
+      },
+      {
+        src: "https://vgmsite.com/soundtracks/pokemon-emerald-remastered-complete-original-soundtrack/hvtjbpuqgo/1-35%20-%20Cycling.mp3",
+        text: "Pokémon R/S/E - Cycling"
+      },
+      {
+        src: "https://vgmtreasurechest.com/soundtracks/pokemon-heartgold-and-soulsilver/xeitzzvlzz/089%20Route%2038.mp3",
+        text: "Pokémon HG/SS - Route 38"
       }
     ];
 
@@ -184,7 +221,7 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById('text21').value = "Homebrew Browser - Main Theme (Post Shutdown)";
     } else {
       const randomValue = Math.random();
-      if (randomValue < 0.9) {
+      if (randomValue < 0.8) {
         audio.src = "https://vgmtreasurechest.com/soundtracks/pokemon-heartgold-and-soulsilver/yxqkoegtyn/157.%20Pok%C3%A9gear%20Radio%20%28Route%20101%29.mp3";
         document.getElementById('text21').value = "Pokégear Radio (Route 101)";
       } else {
