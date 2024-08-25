@@ -1,0 +1,4 @@
+Access-Control-Allow-Origin: *
+Cross-Origin-Embedder-Policy: require-corp
+Cross-Origin-Opener-Policy: same-origin
+Feature-Policy: vibrate 'none'; geolocation 'none'; microphone 'none'; camera 'none'; midi 'none'; sync-script 'none'; xr-spatial-tracking 'none'; payment 'none'; sharedarraybuffer 'self';
