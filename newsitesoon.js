@@ -100,12 +100,22 @@ function playGameAudio() {
       {
         src: "https://vgmtreasurechest.com/soundtracks/pokemon-firered-leafgreen-enhanced-soundtrack/dbhonclifa/39%20Celadon%20Game%20Corner.mp3",
         text: "Celadon Game Corner"
+      },
+      {
+        src: "./img/level2casino.mp3",
+        text: "fuck"
       }
     ];
     
     // Choose a random song
-    var randomIndex = Math.floor(Math.random() * songs.length);
-    var selectedSong = songs[randomIndex];
+    if(document.getElementById('text21').value == "level2"){
+      var selectedSong = songs[3]
+    }
+    else{
+      var randomIndex = Math.floor(Math.random() * songs.length - 1);
+      var selectedSong = songs[randomIndex];
+    }
+
     
     // Set the src and text values
     audioPlayer.src = selectedSong.src;
@@ -213,6 +223,19 @@ document.addEventListener("DOMContentLoaded", function() {
       {
         src: "https://vgmtreasurechest.com/soundtracks/pokemon-heartgold-and-soulsilver/xeitzzvlzz/089%20Route%2038.mp3",
         text: "Pokémon HG/SS - Route 38"
+      },
+      {
+        src: "./img/addiction.wav",
+        text: "Jogeir Liljedahl - Addiction"
+      },
+      {
+        src: "./img/level2.mp3",
+        text: "level2"
+      }
+      ,
+      {
+        src: "./img/explore.mp3",
+        text: "explore"
       }
     ];
 
@@ -221,7 +244,7 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById('text21').value = "Homebrew Browser - Main Theme (Post Shutdown)";
     } else {
       const randomValue = Math.random();
-      if (randomValue < 0.8) {
+      if (randomValue < 0.1) {
         audio.src = "https://vgmtreasurechest.com/soundtracks/pokemon-heartgold-and-soulsilver/yxqkoegtyn/157.%20Pok%C3%A9gear%20Radio%20%28Route%20101%29.mp3";
         document.getElementById('text21').value = "Pokégear Radio (Route 101)";
       } else {
