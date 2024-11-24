@@ -102,13 +102,13 @@ function playGameAudio() {
         text: "Celadon Game Corner"
       },
       {
-        src: "./img/level2casino.mp3",
-        text: "fuck"
+        src: "./img/ONENATIONUNDERME.mp3",
+        text: "ONE NATION UNDER ME"
       }
     ];
     
     // Choose a random song
-    if(document.getElementById('text21').value == "level2"){
+    if(document.getElementById('text21').value == "trump."){
       var selectedSong = songs[3]
     }
     else{
@@ -234,8 +234,12 @@ document.addEventListener("DOMContentLoaded", function() {
       }
       ,
       {
-        src: "./img/explore.mp3",
-        text: "explore"
+        src: "./img/trump.mp3",
+        text: "trump."
+      },
+      {
+        src: "https://vgmtreasurechest.com/soundtracks/pokemon-heartgold-and-soulsilver/yxqkoegtyn/157.%20Pok%C3%A9gear%20Radio%20%28Route%20101%29.mp3",
+        text: "Pokégear Radio (Route 101)"
       }
     ];
 
@@ -244,9 +248,9 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById('text21').value = "Homebrew Browser - Main Theme (Post Shutdown)";
     } else {
       const randomValue = Math.random();
-      if (randomValue < 0.1) {
-        audio.src = "https://vgmtreasurechest.com/soundtracks/pokemon-heartgold-and-soulsilver/yxqkoegtyn/157.%20Pok%C3%A9gear%20Radio%20%28Route%20101%29.mp3";
-        document.getElementById('text21').value = "Pokégear Radio (Route 101)";
+      if (randomValue < 0.5) {
+        audio.src = "https://vgmsite.com/soundtracks/wii-original-system-soundtrack-wii-gamerip-2006/ghalfcqpaf/3-04.%20Local%20Forecast%20%28Daytime%29.mp3";
+        document.getElementById('text21').value = "Local Forecast (Daytime)";
       } else {
         const randomIndex = Math.floor(Math.random() * songs.length);
         audio.src = songs[randomIndex].src;
@@ -272,3 +276,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
   document.addEventListener('click', startAudio);
 });
+
